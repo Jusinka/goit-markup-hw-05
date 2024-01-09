@@ -12,7 +12,7 @@ body{
     letter-spacing: 2%;
     font-weight:Regular;
 }
-button{
+.button{
     font-family:Roboto,sans-serif;
     font-size:16px;
     line-height:24px;
@@ -22,7 +22,7 @@ button{
     cursor:pointer ;
     color: #FFFFFF;
     display: block;
-    
+    min-width: 159;
     height: 56px;
     border: none;
     border-radius: 4px;
@@ -552,6 +552,9 @@ img{
 }
 .input_modal:focus{
     border-color: #4D5AE5;
+    fill: #4D5AE5;
+}
+.input_modal:focus +.icon_person{
     fill: #4D5AE5;
 }
 .icon_person{
