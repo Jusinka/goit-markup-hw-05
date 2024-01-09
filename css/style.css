@@ -605,10 +605,20 @@ img{
     justify-content: center;
     fill: transparent;
 }
-.checkbox_div:checked + .label_privacy > .span_label {
+.checkbox:checked + .label_privacy > .span_label {
     background-color: #404bbf;
     border: none;
     fill: #f4f4fd;
+  }
+  .label_icon {
+    opacity: 0;
+  }
+  
+  .checkbox:checked
+    + .label_privacy
+    > .span_label
+    > .label_icon {
+    opacity: 1;
   }
   .link_privacy{
    color: #4d5ae5;
